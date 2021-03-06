@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="nFX-oB-s4S">
             <objects>
-                <viewController id="otv-Zg-qf1" sceneMemberID="viewController">
+                <viewController id="otv-Zg-qf1" customClass="LoginViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zTf-t9-tcl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +27,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLoginB:" destination="CPz-xY-oeh" eventType="touchUpInside" id="GCC-mG-G99"/>
+                                    <action selector="onLoginB:" destination="otv-Zg-qf1" eventType="touchUpInside" id="Vjk-kS-XM7"/>
+                                    <action selector="onLoginButton:" destination="CPz-xY-oeh" eventType="touchUpInside" id="q1Y-Do-FM0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o3g-8P-ahA"/>
@@ -41,6 +46,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4T-qo-FLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="CPz-xY-oeh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="99.400299850074973"/>
         </scene>
