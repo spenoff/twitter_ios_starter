@@ -12,8 +12,7 @@ class TweetViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tweetTextView.becomeFirstResponder()
     }
     
     @IBOutlet weak var tweetTextView: UITextView!
